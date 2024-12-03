@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تتبع المزاج - WellnessConnect</title>
+    <link rel="stylesheet" href="C:\Users\abajh\OneDrive\سطح المكتب\projct HCI\CSS\StyleSheet1.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>تتبع المزاج</h1>
+        <p>سجل مزاجك اليومي لمتابعة تحسن حالتك النفسية</p>
+    </header>
+
+ 
+    <section id="mood-tracker">
+        <h2>كيف تشعر اليوم؟</h2>
+        <form id="mood-form">
+            <label for="mood">اختر مزاجك:</label>
+            <select id="mood" name="mood">
+                <option value="happy">سعيد</option>
+                <option value="neutral">محايد</option>
+                <option value="sad">حزين</option>
+                <option value="anxious">قلق</option>
+            </select>
+            <button type="submit">تسجيل المزاج</button>
+        </form>
+    </section>
+
+    <section id="mood-history">
+        <h2>تاريخ المزاج</h2>
+        <div id="history-list">
+            <!-- سيتم عرض المزاج السابق هنا -->
+        </div>
+    </section>
+
+    <section id="mood-chart">
+        <h2>مخطط المزاج</h2>
+        <canvas id="moodChart"></canvas>
+    </section>
+
+    <section id="motivational-message">
+        <h2>رسالة تحفيزية</h2>
+        <p id="message">"اليوم هو فرصة جديدة لتحقيق الأفضل!"</p>
+    </section>
+
+
+    <footer>
+        <!-- زر العودة مع السهم في أسفل الصفحة -->
+        <a href="HTMLPage7.html" style="display: inline-flex; align-items: center; padding: 12px 20px; background-color: #00bfae; color: white; text-decoration: none; font-size: 1.1rem; border-radius: 8px; transition: background-color 0.3s ease;">
+    <span style="margin-right: 10px;">&larr;</span> العودة إلى الصفحة الرئيسية
+</a>
+  
+        <p>حقوق النشر © 2024 WellnessConnect</p>
+    </footer>
+
+    <script src="C:\Users\abajh\OneDrive\سطح المكتب\projct HCI\js\Script2.js"></script>
+</body>
+</html>

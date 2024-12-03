@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أهدافي الصحية - WellnessConnect</title>
+    <link rel="stylesheet" href="C:\Users\abajh\OneDrive\سطح المكتب\projct HCI\CSS\StyleSheet1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>أهدافي الصحية</h1>
+        <p>حدد أهدافك الصحية اليومية وراقب تقدمك</p>
+    </header>
+
+    <section id="goal-tracker">
+        <h2>حدد هدفك الصحي لهذا اليوم</h2>
+        <form id="goal-form">
+            <label for="goal">اختر هدفك:</label>
+            <select id="goal" name="goal">
+                <option value="exercise">ممارسة الرياضة</option>
+                <option value="water">شرب الماء</option>
+                <option value="sleep">النوم الكافي</option>
+                <option value="eatHealthy">تناول طعام صحي</option>
+            </select>
+            <label for="goal-progress">تقدم الهدف (%):</label>
+            <input type="number" id="goal-progress" name="goal-progress" min="0" max="100" step="1" placeholder="0-100">
+            <button type="submit">تسجيل الهدف</button>
+        </form>
+    </section>
+
+    <section id="goal-history">
+        <h2>تاريخ الأهداف</h2>
+        <div id="history-list">
+            <!-- سيتم عرض الأهداف السابقة هنا -->
+        </div>
+    </section>
+
+    <section id="goal-chart">
+        <h2>مخطط الأهداف</h2>
+        <canvas id="goalChart"></canvas>
+    </section>
+
+    <section id="motivational-message">
+        <h2>رسالة تحفيزية</h2>
+        <p id="message">"كل خطوة صغيرة تقربك من هدفك!"</p>
+    </section>
+
+    <footer>
+        <!-- زر العودة مع السهم في أسفل الصفحة -->
+        <a href="HTMLPage7.html" style="display: inline-flex; align-items: center; padding: 12px 20px; background-color: #00bfae; color: white; text-decoration: none; font-size: 1.1rem; border-radius: 8px; transition: background-color 0.3s ease;">
+            <span style="margin-right: 10px;">&larr;</span> العودة إلى الصفحة الرئيسية
+        </a>
+
+        <p>حقوق النشر © 2024 WellnessConnect</p>
+    </footer>
+
+    <script src="C:\Users\abajh\OneDrive\سطح المكتب\projct HCI\js\Script3.js"></script>
+</body>
+</html>
